@@ -6,7 +6,6 @@ import Layout from "../src/layouts/Layout";
 import {
   servicesSliderProps,
   testimonialsSliderProps,
-  skillsSliderProps,
 } from "../src/sliderProps";
 const PortfolioIsotope = dynamic(
   () => import("../src/components/PortfolioIsotope"),
@@ -369,9 +368,8 @@ const Index = () => {
             </div>
           </div>
         </div>
-        {/* Skills */}
-        
-
+        {/* Skills (icon scroller)*/}
+        {/* Skills (static)*/}
         <div className="v-line v-line-left">
           <div className="container">
             <div className="row">
