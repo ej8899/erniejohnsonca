@@ -1,3 +1,7 @@
+/*
+  https://swiperjs.com/
+*/
+
 import SwiperCore, {
   Autoplay,
   EffectCreative,
