@@ -370,7 +370,8 @@ const Index = () => {
           </div>
         </div>
         {/* Skills (icon scroller)*/}
-        <SkillSlider></SkillSlider>
+        <SkillSlider ></SkillSlider>
+        &nbsp;
         {/* Skills (static)*/}
         <div className="v-line v-line-left">
           <div className="container">
