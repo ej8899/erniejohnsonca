@@ -51,6 +51,41 @@ export const servicesSliderProps = {
   },
 };
 
+export const skillsSliderProps = {
+  slidesPerView: 3,
+  autoplay: {
+    delay: 0,
+  },
+  spaceBetween: 40,
+  watchSlidesProgress: true,
+  noSwipingSelector: "a",
+  loop: true,
+  speed: 3000,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: false,
+  },
+  navigation: false,
+  breakpoints: {
+    // when window width is >= 320px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+};
+
 export const testimonialsSliderProps = {
   slidesPerView: 3,
   spaceBetween: 40,

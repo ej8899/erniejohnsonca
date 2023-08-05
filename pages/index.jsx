@@ -6,6 +6,7 @@ import Layout from "../src/layouts/Layout";
 import {
   servicesSliderProps,
   testimonialsSliderProps,
+  skillsSliderProps,
 } from "../src/sliderProps";
 const PortfolioIsotope = dynamic(
   () => import("../src/components/PortfolioIsotope"),
@@ -117,14 +118,14 @@ const Index = () => {
                   <ul>
                     <li>
                       <span className="num">
-                        12 <strong>+</strong>
+                        2 <strong>+</strong>
                       </span>
                       <span className="value">
                         Years of <strong>Experience</strong>
                       </span>
                     </li>
                     <li>
-                      <span className="num">330</span>
+                      <span className="num">53</span>
                       <span className="value">
                         Completed <strong>Projects</strong>
                       </span>
@@ -369,6 +370,8 @@ const Index = () => {
           </div>
         </div>
         {/* Skills */}
+        
+
         <div className="v-line v-line-left">
           <div className="container">
             <div className="row">
