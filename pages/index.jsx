@@ -7,6 +7,7 @@ import {
   servicesSliderProps,
   testimonialsSliderProps,
 } from "../src/sliderProps";
+import SkillSlider from "../src/components/SkillSlider";
 const PortfolioIsotope = dynamic(
   () => import("../src/components/PortfolioIsotope"),
   {
@@ -369,6 +370,7 @@ const Index = () => {
           </div>
         </div>
         {/* Skills (icon scroller)*/}
+        <SkillSlider></SkillSlider>
         {/* Skills (static)*/}
         <div className="v-line v-line-left">
           <div className="container">

@@ -37,6 +37,27 @@
 * Base Styles
 **/
 
+:root {
+  --color-text: orange;
+  --color-bg: #F0EBE3;
+  --color-bg-accent: #F0EBE3;
+  --size: clamp(10rem, 1rem + 20vmin, 10rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: orange;
+    --color-bg: #f0ebe3;
+    --color-bg-accent: #F0EBE3;
+  }
+}
+
+
+
 * {
 	outline: none;
 	box-sizing: border-box;
@@ -5621,7 +5642,7 @@ a.wp-block-button__link {
 		font-size: 26px;
 	}
 	.menu-full-overlay .v-line-block span {
-    	display: none;
+    display: none;
 	}
 
 	.terms-label {
@@ -5634,3 +5655,74 @@ a.wp-block-button__link {
 		text-align: center!important;
 	}
 }
+
+
+/* SKILLS marquee */
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  transform: skewY(0deg);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll-x var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    /* animation-play-state: paused;  */
+  }
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+.marquee__group:hover {
+ /* animation-play-state: paused; */
+}
+
+.marquee--reverse:hover {
+ /* animation-play-state: paused; */
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--scroll-start));
+  }
+  to {
+    transform: translateX(var(--scroll-end));
+  }
+}
+
+/* Element styles */
+.marquee svg {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  fill: var(--color-text) !important;
+  background: var(--color-bg-accent);
+  aspect-ratio: 16/9;
+  padding: calc(var(--size) / 10);
+  border-radius: 0.5rem;
+}
+
+/* Parent wrapper */
+.marquee_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: auto;
+  max-width: 800px;
+}
+
+
