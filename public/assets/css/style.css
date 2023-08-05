@@ -5726,3 +5726,13 @@ a.wp-block-button__link {
 }
 
 
+
+
+/* MISC extras */
+
+/* nav bar frosting */
+.frosting {
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

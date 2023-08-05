@@ -60,9 +60,9 @@ export const stickyNav = () => {
   sticky.forEach((sticky) => {
     if (sticky) {
       if (offset > 100) {
-        sticky.classList.add("animate-in", "sticky");
+        sticky.classList.add("animate-in", "sticky","frosting");
       } else {
-        sticky.classList.remove("animate-in", "sticky");
+        sticky.classList.remove("animate-in", "sticky","frosting");
       }
     }
   });
