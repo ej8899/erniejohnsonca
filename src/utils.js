@@ -134,7 +134,7 @@ export const linkClick = () => {
 export const jarallaxAnimation = () => {
   let { jarallax, jarallaxVideo } = require("jarallax");
   jarallax(document.querySelectorAll(`.js-parallax`), {
-    speed: 0.65,
+    speed: 0.4,
     scale: 1.0,
     type: "scroll",
   });
