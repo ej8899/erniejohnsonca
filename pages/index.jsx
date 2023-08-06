@@ -345,6 +345,9 @@ const Index = () => {
       </section>
       {/* Section - Skills */}
       <section className="lui-section lui-gradient-center" id="skills-section">
+        <br />
+        <br />
+        <br />
         {/* Heading */}
         <div className="lui-heading">
           <div className="container">

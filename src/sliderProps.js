@@ -61,7 +61,7 @@ export const testimonialsSliderProps = {
   spaceBetween: 40,
   watchSlidesProgress: true,
   noSwipingSelector: "a",
-  loop: false,
+  loop: true,
   speed: 1000,
   pagination: {
     el: ".swiper-pagination",

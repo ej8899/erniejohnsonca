@@ -28,7 +28,7 @@ const Footer = () => {
                 className="copyright-text align-center scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                © 2023 <strong>EJDevs</strong>. All rights reserved
+                © 2023 <strong>ERNIEJOHNSON.CA</strong>. All rights reserved
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -36,7 +36,7 @@ const Footer = () => {
                 className="copyright-text align-right scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                Developed by <strong>EJDevs.com</strong>
+                Developed by <strong>ERNIEJOHNSON.CA</strong>
               </div>
             </div>
           </div>
