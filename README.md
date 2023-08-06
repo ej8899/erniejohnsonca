@@ -2,6 +2,12 @@
 personal profile of erniejohnson.ca
 
 
+# getting started
+If using this template for your own project, 
+npm install -> setup for dependencies
+npm run dev -> development service
+npm run build -> build for deploy
+
 # dependencies
 Using third-party libraries in web development has several advantages and disadvantages. The main pros of utilizing these libraries include faster development speed, improved code quality, and access to a wide range of pre-built functionalities. Third-party libraries enable developers to save time by leveraging existing solutions for common tasks, thereby reducing the need to reinvent the wheel. 
 
