@@ -14,8 +14,8 @@ const SkillSlider = () => {
         }}>
   <div className="marquee"  >
     <div className="marquee__group" >
-      <svg >
-        <use xlinkHref="#js" />
+      <svg>
+        <use  xlinkHref="#js" />
       </svg>
       <svg>
         <use xlinkHref="#bootstrap" />

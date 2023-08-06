@@ -79,12 +79,12 @@ const Header = () => {
                   </svg>
                 </span>
               </a>
-              {/* menu btn 
+              {/* menu btn  */}
               <a href="#" className="menu-btn" onClick={(e) => toggleMenu(e)}>
                 <span />
                 <span />
               </a>
-              */}
+              
               {/* Menu Full Overlay */}
               <div className="menu-full-overlay">
                 <div className="menu-full-container">

@@ -2,7 +2,6 @@
 // GLOBAL object
 //
 
-// const { light } = require("@mui/material/styles/createPalette");
 
 // TASK:
 // add this to index.js

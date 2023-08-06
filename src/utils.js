@@ -70,6 +70,7 @@ export const stickyNav = () => {
 
 export const toggleMenu = (e) => {
   e.preventDefault();
+  if(global.config.debug) alert("toggle menu"); 
   const menu = document.querySelector(".menu-btn");
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
