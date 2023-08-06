@@ -95,8 +95,9 @@ const Index = () => {
               >
                 <img
                   decoding="async"
+                  class="greyscale"
                   src="assets/images/profile2.png"
-                  alt="<b>Zoé</b> Miller"
+                  alt="<b>Ernie</b> Johnson"
                 />
                 <span className="circle circle-1" />
                 <span
