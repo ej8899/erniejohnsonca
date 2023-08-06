@@ -2912,7 +2912,7 @@ hr {
 	position: relative;
 	overflow: hidden;
 	padding: 30px 35px;
-	background: #fff;
+	background: #e9e6e6;
 	border-radius: 18px;
 }
 
@@ -3032,7 +3032,7 @@ hr {
 	top: -10px;
 	width: 10px;
 	height: calc(100% + 20px);
-	background: #F0EBE3;
+	background: #e9e6e6;
 	z-index: 2;
 	pointer-events: none;
 	transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
@@ -3103,7 +3103,7 @@ hr {
 	background: rgba(16, 30, 50, 0.5);
 	opacity: 0;
 	font-size: 25px;
-	color: #fff;
+	color: #e9e6e6;
 	line-height: 1;
 	-webkit-transform: scale(1);
 	transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
@@ -3184,7 +3184,7 @@ hr {
 .works-items.works-masonry-items .works-item {
 	position: relative;
 	padding: 30px;
-	background: #fff;
+	background: #e9e6e6;
 	border-radius: 20px;
 }
 
