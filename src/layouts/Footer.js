@@ -9,16 +9,16 @@ const Footer = () => {
                 className="social-links scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                <a target="_blank" rel="nofollow" href="http://twitter.com">
+                <a target="_blank" rel="nofollow" href={global.config.link.twitter}>
                   <i aria-hidden="true" className="fab fa-twitter" />
                 </a>
-                <a target="_blank" rel="nofollow" href="#">
+                <a target="_blank" rel="nofollow" href={global.config.link.linkedin}>
                       <i aria-hidden="true" className="fab fa-linkedin-in" />
                 </a>
-                <a target="_blank" rel="nofollow" href="#">
+                <a target="_blank" rel="nofollow" href={global.config.link.youtube}>
                       <i aria-hidden="true" className="fab fa-youtube" />
                 </a>
-                <a target="_blank" rel="nofollow" href="#">
+                <a target="_blank" rel="nofollow" href={global.config.link.github}>
                       <i aria-hidden="true" className="fab fa-github" />
                 </a>
               </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                 className="copyright-text align-right scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                Developed by <strong>ERNIEJOHNSON.CA</strong>
+                Developed by <strong>ERNIEJOHNSON.CA</strong> - version {global.config.appVersion}
               </div>
             </div>
           </div>

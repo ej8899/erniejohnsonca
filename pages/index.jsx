@@ -3,6 +3,9 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Resume from "../src/components/Resume";
 import Layout from "../src/layouts/Layout";
+
+import '../src/config';
+
 import {
   servicesSliderProps,
   testimonialsSliderProps,
@@ -58,16 +61,16 @@ const Index = () => {
                     </p>
                   </div>
                   <div className="social-links">
-                    <a target="_blank" rel="nofollow" href="#">
+                    <a target="_blank" rel="nofollow" href={global.config.link.twitter}>
                       <i aria-hidden="true" className="fab fa-twitter" />
                     </a>
-                    <a target="_blank" rel="nofollow" href="#">
+                    <a target="_blank" rel="nofollow" href={global.config.link.linkedin}>
                       <i aria-hidden="true" className="fab fa-linkedin-in" />
                     </a>
-                    <a target="_blank" rel="nofollow" href="#">
+                    <a target="_blank" rel="nofollow" href={global.config.link.youtube}>
                       <i aria-hidden="true" className="fab fa-youtube" />
                     </a>
-                    <a target="_blank" rel="nofollow" href="#">
+                    <a target="_blank" rel="nofollow" href={global.config.link.github}>
                       <i aria-hidden="true" className="fab fa-github" />
                     </a>
                   </div>
