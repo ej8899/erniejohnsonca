@@ -2924,7 +2924,7 @@ hr {
 .services-item .icon {
 	margin-top: 15px;
 	font-size: 41px;
-	min-height: 50px;
+	min-height: 20px;
 	line-height: 1;
 	color: var(--myorange);
 }
@@ -5741,4 +5741,28 @@ a.wp-block-button__link {
 .greyscale {
   filter: grayscale(80%);
   -webkit-filter: grayscale(80%);
+}
+
+#scrollToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollToTopButton:hover {
+  opacity: 0.8;
+}
+
+#scrollToTopButton.active {
+  transform: translateY(0);
+  display:block;
+  opacity: 1.0;
 }

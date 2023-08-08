@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layouts/PreLoader";
 import "../styles/globals.css";
+
 const App = ({ Component, pageProps }) => {
   const [loader, setLoader] = useState(true);
   useEffect(() => {
@@ -88,6 +89,7 @@ const App = ({ Component, pageProps }) => {
       </Head>
       {loader && <PreLoader />}
       <Component {...pageProps} />
+      <button id="scrollToTopButton" title="Scroll to Top"><i class="fas fa-chevron-up"></i></button>
     </Fragment>
   );
 };
