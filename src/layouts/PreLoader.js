@@ -9,7 +9,7 @@ const PreLoader = () => {
             <div className="spinner-logo">
               <img
                 src="assets/images/logo2.png"
-                alt="Luique - Personal Portfolio HTML Template"
+                alt="ErnieJohnson.ca - Your Web Developer!"
               />
               <div className="spinner-dot" />
               <div className="spinner spinner-line" />

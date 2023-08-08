@@ -85,7 +85,7 @@ const Resume = () => {
             >
               <span>
                 {" "}
-                my <b>Story</b>
+                a little bit about my <b>history</b>
               </span>
             </div>
           </div>
