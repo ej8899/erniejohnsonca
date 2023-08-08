@@ -140,3 +140,4 @@ export const jarallaxAnimation = () => {
     type: "scroll",
   });
 };
+

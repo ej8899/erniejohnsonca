@@ -14,6 +14,19 @@ const Layout = ({ children, pageClassName }) => {
     initCursor();
     window.addEventListener("scroll", activeAnimation);
     window.addEventListener("scroll", stickyNav);
+
+    // scroll to top button
+    const scrollToTopButton = document.getElementById('scrollToTopButton');
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopButton.classList.add('active');
+    } else {
+      scrollToTopButton.classList.remove('active');
+    }
+    });
+    scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }, []);
 
   useEffect(() => {
