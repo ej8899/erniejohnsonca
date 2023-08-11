@@ -43,10 +43,7 @@ const Contact = () => {
   // create a submit using a href
   const formRef = useRef(null);
   const formButton = () => {
-      //$('#cform').submit(); 
-      
       if(formRef.current) {
-        alert("handling submit button")
         //formRef.current.submit();
         const submitEvent = new Event('submit', { bubbles: true });
         formRef.current.dispatchEvent(submitEvent);
@@ -54,12 +51,15 @@ const Contact = () => {
       return false;
   }
 
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmission = (event) => {
     event.preventDefault();
-    alert("in submission process")
-    if (!isFormValidated) return;
+    event.stopPropagation();
+    if(!isFormValidated) return;
     setIsSendPending(true);
+    handleFormSubmit(event);
+  }
 
+  const handleFormSubmit = async (event) => {
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -193,7 +193,7 @@ const Contact = () => {
               
               <div className='contacts-form'> 
               {!isSendPending && !isSent && !isError && (
-                <form onSubmit={(e) => handleFormSubmit(e)} 
+                <form onSubmit={(e) => handleFormSubmission(e)} 
                       id='cform'
                       noValidate
                       aria-label='contact'
@@ -283,13 +283,7 @@ const Contact = () => {
                       <div className='terms-label'>
                         * required
                       </div>
-                      <a
-                        href='#'
-                        className='btn'
-                        onClick={formButton}
-                      >
-                        <span>Send Message</span>
-                      </a>
+                      <button type="submit">Send Message</button>
                     </div>
                   </div>
                 </form>
